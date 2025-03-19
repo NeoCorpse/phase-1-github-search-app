@@ -5,9 +5,17 @@
 }
 
 #github-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
+#user-list {
+  grid-column: 1;
+}
+
+#repos-list {
+  grid-column: 2;
+}
 ul {
   list-style: none;
 }
