@@ -24,6 +24,7 @@ form.addEventListener('submit', (e) => {
                 <img src="${item.avatar_url}">
                 <p>${item.login}</p>
                 <a href="${item.html_url}">Profile link</a>
+				<hr>
             `;
 
 				li.addEventListener('click', (e) => {
@@ -34,9 +35,9 @@ form.addEventListener('submit', (e) => {
 							arr.forEach((item) => {
 								const li = document.createElement('li');
 								li.innerHTML = `
-                                <img src="${item.owner.avatar_url}">
                                 <p>${item.name}</p>
                                 <a href="${item.html_url}">Repo link</a>
+								<hr>
                             `;
 								reposList.appendChild(li);
 							});
